@@ -1,0 +1,27 @@
+# Hey Everyone This is My Portfolio Website
+
+This is a personal portfolio website project designed to showcase my projects, skills, and experience in web development and design. The major part i focused on this was CSS and to learn more about CSS
+
+## Features
+
+- **Responsive Design**: The website is optimized for various screen sizes, ensuring a seamless experience across devices.
+- **Navigation**: Includes sections for Home, About, Work, and Contact.
+- **Project Showcase**: Highlights key projects with descriptions and links to their repositories.
+- **Contact Information**: Provides ways to connect via email and social media platforms.
+- **Custom Styling**: Designed with a unique aesthetic using custom CSS and imported fonts.
+
+## Technologies Used
+
+- **HTML**: For structuring the content.
+- **CSS**: For styling and layout, including responsive design.
+- **JavaScript**: For interactivity and dynamic behavior.
+- **Bootstrap**: For additional styling and layout support.
+- **Google Fonts**: For custom typography.
+- **GitHub Copilot**
+
+## Future Enhancements 
+
+- *Add more projects to the "Work" section.*
+- *Implement a backend for form submissions in the "Contact" section.*
+- *Enhance the design with animations and transitions.*
+- *Optimize for faster loading times.*

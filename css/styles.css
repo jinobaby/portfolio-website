@@ -1,0 +1,213 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rammetto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Badeen+Display&display=swap');
+
+:root{
+    --brown : #1a1818;
+    --skin-color : #ece7e1;
+}
+
+/* General */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Partiition */
+.main-part{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #ece7e1;
+}
+
+
+/* Link Side */
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 5%;
+    padding-top: 5% 0;
+}
+    .social-links {
+        list-style: none;
+        display: flex;
+        flex-direction: column-reverse;
+        font-family: "Philosopher", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-right: 40%;
+        margin-top: 40%;
+        gap: 40px;
+    }
+    .social-links li a {
+        word-spacing: 50px;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        text-decoration: none;
+        color: #1a1818;
+    }
+    .social-links a:hover {
+        text-decoration: line-through;
+    }
+    /* Divider Line */
+    .divider {
+        width: 1px;
+        height: 40%;
+        background-color: #1a1818;
+        margin: 10px 0;
+    }
+    .copyright {
+        font-size: 14px;
+        font-family: "Roboto", serif;
+        font-weight: 500;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+    }
+
+/* Middle area / About Me */
+.mid-part{
+    flex: 50%;
+}
+.about-me{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-top: 90%;
+        margin-left: 15%;
+        margin-right: 15%;
+        color: #1a1818;
+    }
+    .about-me h2{
+        font-family: "Philosopher", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 16px;
+        letter-spacing: 2px;
+        font-weight: 600;
+    }
+    
+    .about-me h4 {
+        font-family: "Philosopher", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.6;
+        margin-top: 10px;
+        letter-spacing: 2px;
+    }
+    
+    .about-me a {
+        font-family: "Philosopher", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: underline;
+        color: #1a1818;
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+
+/*  */
+.nav-part{
+    flex: 50%;
+    margin-left: 2%;
+    margin-left: 5%;
+}
+
+.nav-text{
+    display: inline-block;
+    line-height: 1; 
+    padding-bottom: 40px;
+}
+.nav-text a{
+    font-family: "Badeen Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 175px;
+    letter-spacing: 10px;
+    text-decoration: none;
+    color: #1a1818;
+    transition: 0.1s;
+}
+.nav-text a:hover{
+    font-style: italic;
+    margin-left: 7%;
+}
+
+::selection{
+    background: var(--brown);
+    color: var(--skin-color);
+}
+
+@media screen  and (max-width: 1024px) {
+    .main-part {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+     /* Fix sidebar */
+    .sidebar {
+        width: 100%; /* Make it span full width */
+        height: auto;
+        display: flex;
+        flex-direction: row; /* Arrange icons horizontally */
+        justify-content: center; /* Center elements */
+        align-items: center;
+        gap: 20px;
+        padding: 10px 0;
+    }
+
+    .social-links {
+        flex-direction: row; /* Arrange links horizontally */
+        margin: 0;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .social-links li a {
+        writing-mode: horizontal-tb; /* Reset vertical writing */
+        transform: rotate(0); /* Remove rotation */
+    }
+
+    .divider {
+        display: none; /* Hide vertical divider */
+    }
+
+    .copyright {
+        writing-mode: horizontal-tb; /* Make text horizontal */
+        transform: rotate(0);
+        font-size: 12px;
+    }
+
+    .mid-part {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    /* .about-me {
+        margin-top: 20%;
+        margin-left: 10%;
+        margin-right: 10%;
+    } */
+
+    .nav-part {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .nav-text{
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .nav-text a {
+        font-size: 50px; /* Reduce size for smaller screens */
+        letter-spacing: 5px;
+    }
+}

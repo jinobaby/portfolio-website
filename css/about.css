@@ -1,0 +1,167 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Rammetto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Badeen+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --brown : #1a1818;
+    --skin-color : #ece7e1;
+}
+
+/* General */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Partiition */
+.main-part {
+    display: flex;
+    height: 400vh; /* Full viewport height */
+    width: 100%;
+    background-color: var(--skin-color);
+    display: flex;
+}
+
+
+/* Link Side */
+.sidebar {
+    flex: 1;
+    height: 100vh;
+    width: 5%; /* Adjust width as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5%;
+    background-color: var(--skin-color);
+}
+    .social-links {
+        list-style: none;
+        display: flex;
+        flex-direction: column-reverse;
+        font-family: "Philosopher", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-right: 40%;
+        margin-top: 40%;
+        gap: 40px;
+    }
+    .social-links li a {
+        word-spacing: 50px;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        text-decoration: none;
+        color: #1a1818;
+    }
+    .social-links a:hover {
+        text-decoration: line-through;
+    }
+    /* Divider Line */
+    .divider {
+        width: 1px;
+        height: 40%;
+        background-color: #1a1818;
+        margin: 10px 0;
+    }
+    .copyright {
+        font-size: 14px;
+        color: #1a1818;
+        font-family: "Roboto", serif;
+        font-weight: 500;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+    }
+
+/* Middle area / About Me */
+.mid-part {
+    display: flex;
+    flex: 20;
+    height: 100vh;
+    width: 95%; /* Adjust width as needed */
+    background-color: var(--skin-color)
+    
+}
+.about-me {
+    height: 100vh;
+    width: 60%;
+    margin-left: 9%;
+    /* margin-right: 15%; */
+    color: var(--brown);
+    flex: 1;
+}
+.about-img{
+    height: 100vh;
+    width: 40%;
+    flex: 0.5;
+}
+.about-img img{
+    margin-top: 30%;
+    height: 400px;
+    width: 310px;
+}
+
+    .about-me h2 {
+        margin-top: 7%;
+        font-family: "Cardo", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 200px;
+        letter-spacing: 2px;
+    }
+    .about-me h3 {
+        margin-top: 7%;
+        font-family: "Cardo", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 50px;
+        letter-spacing: 2px;
+        width: 85%;
+        font-weight: 600;
+        padding-bottom: 40px;
+        
+
+    }
+    .about-me h4 {
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        width: 80%;
+        font-size: 30px;
+        /* letter-spacing: 2px; */
+        /* font-weight: 600; */
+        /* padding-bottom: 40px; */
+
+    }
+    
+    .about-me button{
+        background-color: #1a1818;
+        color: #ece7e1;
+        height: 40px;
+        width: 150px;
+        border-radius: 20px;
+        font-family: "Philosopher", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        
+    }
+
+    ::selection{
+        background: var(--brown);
+        color: var(--skin-color);
+    }
+
+@media screen  and (max-width: 1051px) {
+
+    .about-img img{
+        display: block;
+    }
+
+}
